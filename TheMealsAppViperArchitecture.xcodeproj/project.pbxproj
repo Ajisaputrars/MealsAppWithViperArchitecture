@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7673E1225B9FD8500CB2907 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = D7673E1125B9FD8500CB2907 /* SDWebImage */; };
+		D7673E1425B9FD8500CB2907 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D7673E1325B9FD8500CB2907 /* SDWebImageMapKit */; };
+		D7673E1925B9FE9800CB2907 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7673E1825B9FE9800CB2907 /* Extension.swift */; };
 		D7F0A07625B9C2900015F21A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F0A07525B9C2900015F21A /* AppDelegate.swift */; };
 		D7F0A07825B9C2900015F21A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F0A07725B9C2900015F21A /* SceneDelegate.swift */; };
 		D7F0A07A25B9C2900015F21A /* HomePageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F0A07925B9C2900015F21A /* HomePageController.swift */; };
@@ -15,6 +18,21 @@
 		D7F0A08525B9C2920015F21A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7F0A08325B9C2920015F21A /* LaunchScreen.storyboard */; };
 		D7F0A09025B9C2920015F21A /* TheMealsAppViperArchitectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F0A08F25B9C2920015F21A /* TheMealsAppViperArchitectureTests.swift */; };
 		D7F0A09B25B9C2920015F21A /* TheMealsAppViperArchitectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F0A09A25B9C2920015F21A /* TheMealsAppViperArchitectureUITests.swift */; };
+		D7F0A0C725B9C6330015F21A /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F0A0C625B9C6330015F21A /* Injection.swift */; };
+		D7F0A0CC25B9C7BC0015F21A /* MealRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F0A0CB25B9C7BC0015F21A /* MealRepository.swift */; };
+		D7F0A0D125B9C7E80015F21A /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F0A0D025B9C7E80015F21A /* RemoteDataSource.swift */; };
+		D7F0A0D625B9C7FF0015F21A /* CategoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F0A0D525B9C7FF0015F21A /* CategoryResponse.swift */; };
+		D7F0A0DD25B9C8890015F21A /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F0A0DC25B9C8890015F21A /* CategoryModel.swift */; };
+		D7F0A0E525B9C8A50015F21A /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F0A0E425B9C8A50015F21A /* HomeInteractor.swift */; };
+		D7F0A0EA25B9C8BB0015F21A /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F0A0E925B9C8BB0015F21A /* DetailInteractor.swift */; };
+		D7F0A0EF25B9CC0D0015F21A /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F0A0EE25B9CC0D0015F21A /* APICall.swift */; };
+		D7F0A0F425B9CC280015F21A /* CategoryMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F0A0F325B9CC280015F21A /* CategoryMapper.swift */; };
+		D7F0A0F925B9CC680015F21A /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F0A0F825B9CC680015F21A /* CustomError.swift */; };
+		D7F0A0FE25B9CDE80015F21A /* HomePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F0A0FD25B9CDE80015F21A /* HomePageView.swift */; };
+		D7F0A10325B9CECE0015F21A /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F0A10225B9CECE0015F21A /* MealTableViewCell.swift */; };
+		D7F0A11825B9EAB60015F21A /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F0A11725B9EAB60015F21A /* HomeRouter.swift */; };
+		D7F0A12025B9F0470015F21A /* DetailPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F0A11F25B9F0470015F21A /* DetailPageController.swift */; };
+		D7F0A12525B9F13D0015F21A /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F0A12425B9F13D0015F21A /* HomePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D7673E1825B9FE9800CB2907 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		D7F0A07225B9C2900015F21A /* TheMealsAppViperArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMealsAppViperArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7F0A07525B9C2900015F21A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7F0A07725B9C2900015F21A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +68,21 @@
 		D7F0A09625B9C2920015F21A /* TheMealsAppViperArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheMealsAppViperArchitectureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7F0A09A25B9C2920015F21A /* TheMealsAppViperArchitectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMealsAppViperArchitectureUITests.swift; sourceTree = "<group>"; };
 		D7F0A09C25B9C2920015F21A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7F0A0C625B9C6330015F21A /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
+		D7F0A0CB25B9C7BC0015F21A /* MealRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRepository.swift; sourceTree = "<group>"; };
+		D7F0A0D025B9C7E80015F21A /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
+		D7F0A0D525B9C7FF0015F21A /* CategoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryResponse.swift; sourceTree = "<group>"; };
+		D7F0A0DC25B9C8890015F21A /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		D7F0A0E425B9C8A50015F21A /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		D7F0A0E925B9C8BB0015F21A /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		D7F0A0EE25B9CC0D0015F21A /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		D7F0A0F325B9CC280015F21A /* CategoryMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryMapper.swift; sourceTree = "<group>"; };
+		D7F0A0F825B9CC680015F21A /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		D7F0A0FD25B9CDE80015F21A /* HomePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageView.swift; sourceTree = "<group>"; };
+		D7F0A10225B9CECE0015F21A /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
+		D7F0A11725B9EAB60015F21A /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		D7F0A11F25B9F0470015F21A /* DetailPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageController.swift; sourceTree = "<group>"; };
+		D7F0A12425B9F13D0015F21A /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +90,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7673E1425B9FD8500CB2907 /* SDWebImageMapKit in Frameworks */,
+				D7673E1225B9FD8500CB2907 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,11 +139,7 @@
 				D7F0A0B625B9C4190015F21A /* Core */,
 				D7F0A0B525B9C4110015F21A /* Module */,
 				D7F0A0B725B9C4380015F21A /* SupportingFiles */,
-				D7F0A07925B9C2900015F21A /* HomePageController.swift */,
-				D7F0A08125B9C2920015F21A /* Assets.xcassets */,
-				D7F0A08325B9C2920015F21A /* LaunchScreen.storyboard */,
 				D7F0A08625B9C2920015F21A /* Info.plist */,
-				D7F0A07E25B9C2900015F21A /* TheMealsAppViperArchitecture.xcdatamodeld */,
 			);
 			path = TheMealsAppViperArchitecture;
 			sourceTree = "<group>";
@@ -162,6 +194,9 @@
 		D7F0A0B725B9C4380015F21A /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				D7F0A08325B9C2920015F21A /* LaunchScreen.storyboard */,
+				D7F0A08125B9C2920015F21A /* Assets.xcassets */,
+				D7F0A07E25B9C2900015F21A /* TheMealsAppViperArchitecture.xcdatamodeld */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -169,6 +204,9 @@
 		D7F0A0B825B9C4A60015F21A /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				D7F0A0CB25B9C7BC0015F21A /* MealRepository.swift */,
+				D7F0A0D025B9C7E80015F21A /* RemoteDataSource.swift */,
+				D7F0A0D525B9C7FF0015F21A /* CategoryResponse.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -176,6 +214,8 @@
 		D7F0A0B925B9C4AC0015F21A /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				D7F0A0DA25B9C86F0015F21A /* Model */,
+				D7F0A0DB25B9C8770015F21A /* UseCase */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -183,6 +223,7 @@
 		D7F0A0BA25B9C4B30015F21A /* DI */ = {
 			isa = PBXGroup;
 			children = (
+				D7F0A0C625B9C6330015F21A /* Injection.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -190,6 +231,10 @@
 		D7F0A0BB25B9C4BB0015F21A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D7F0A0EE25B9CC0D0015F21A /* APICall.swift */,
+				D7F0A0F325B9CC280015F21A /* CategoryMapper.swift */,
+				D7F0A0F825B9CC680015F21A /* CustomError.swift */,
+				D7673E1825B9FE9800CB2907 /* Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -216,6 +261,7 @@
 		D7F0A0BE25B9C5340015F21A /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				D7F0A11725B9EAB60015F21A /* HomeRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -223,6 +269,9 @@
 		D7F0A0BF25B9C53A0015F21A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D7F0A07925B9C2900015F21A /* HomePageController.swift */,
+				D7F0A0FD25B9CDE80015F21A /* HomePageView.swift */,
+				D7F0A10225B9CECE0015F21A /* MealTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -230,6 +279,7 @@
 		D7F0A0C025B9C53E0015F21A /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				D7F0A12425B9F13D0015F21A /* HomePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -237,6 +287,7 @@
 		D7F0A0C125B9C54B0015F21A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D7F0A11F25B9F0470015F21A /* DetailPageController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -246,6 +297,23 @@
 			children = (
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D7F0A0DA25B9C86F0015F21A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D7F0A0DC25B9C8890015F21A /* CategoryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7F0A0DB25B9C8770015F21A /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				D7F0A0E425B9C8A50015F21A /* HomeInteractor.swift */,
+				D7F0A0E925B9C8BB0015F21A /* DetailInteractor.swift */,
+			);
+			path = UseCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +332,10 @@
 			dependencies = (
 			);
 			name = TheMealsAppViperArchitecture;
+			packageProductDependencies = (
+				D7673E1125B9FD8500CB2907 /* SDWebImage */,
+				D7673E1325B9FD8500CB2907 /* SDWebImageMapKit */,
+			);
 			productName = TheMealsAppViperArchitecture;
 			productReference = D7F0A07225B9C2900015F21A /* TheMealsAppViperArchitecture.app */;
 			productType = "com.apple.product-type.application";
@@ -335,6 +407,9 @@
 				Base,
 			);
 			mainGroup = D7F0A06925B9C2900015F21A;
+			packageReferences = (
+				D7673E1025B9FD8500CB2907 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = D7F0A07325B9C2900015F21A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -377,9 +452,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7F0A0C725B9C6330015F21A /* Injection.swift in Sources */,
+				D7F0A0EA25B9C8BB0015F21A /* DetailInteractor.swift in Sources */,
+				D7F0A0EF25B9CC0D0015F21A /* APICall.swift in Sources */,
+				D7F0A0D125B9C7E80015F21A /* RemoteDataSource.swift in Sources */,
+				D7F0A10325B9CECE0015F21A /* MealTableViewCell.swift in Sources */,
+				D7F0A12025B9F0470015F21A /* DetailPageController.swift in Sources */,
+				D7F0A0FE25B9CDE80015F21A /* HomePageView.swift in Sources */,
 				D7F0A07A25B9C2900015F21A /* HomePageController.swift in Sources */,
+				D7F0A0E525B9C8A50015F21A /* HomeInteractor.swift in Sources */,
+				D7F0A11825B9EAB60015F21A /* HomeRouter.swift in Sources */,
 				D7F0A07625B9C2900015F21A /* AppDelegate.swift in Sources */,
+				D7F0A0F925B9CC680015F21A /* CustomError.swift in Sources */,
 				D7F0A08025B9C2900015F21A /* TheMealsAppViperArchitecture.xcdatamodeld in Sources */,
+				D7F0A0CC25B9C7BC0015F21A /* MealRepository.swift in Sources */,
+				D7F0A12525B9F13D0015F21A /* HomePresenter.swift in Sources */,
+				D7673E1925B9FE9800CB2907 /* Extension.swift in Sources */,
+				D7F0A0F425B9CC280015F21A /* CategoryMapper.swift in Sources */,
+				D7F0A0D625B9C7FF0015F21A /* CategoryResponse.swift in Sources */,
+				D7F0A0DD25B9C8890015F21A /* CategoryModel.swift in Sources */,
 				D7F0A07825B9C2900015F21A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -705,6 +796,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D7673E1025B9FD8500CB2907 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D7673E1125B9FD8500CB2907 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7673E1025B9FD8500CB2907 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		D7673E1325B9FD8500CB2907 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7673E1025B9FD8500CB2907 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D7F0A07E25B9C2900015F21A /* TheMealsAppViperArchitecture.xcdatamodeld */ = {
