@@ -10,6 +10,7 @@ import UIKit
 class HomePresenter {
   private let router = HomeRouter()
   private let homeUseCase: HomeUseCase
+  
   var categories: [CategoryModel] = []
   var errorMessage = ""
 

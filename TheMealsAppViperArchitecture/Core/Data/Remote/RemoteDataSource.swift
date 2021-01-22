@@ -19,7 +19,8 @@ final class RemoteDataSource: NSObject {
 extension RemoteDataSource: RemoteDataSourceProtocol {
   func getCategories(result: @escaping (Result<[CategoryResponse], URLError>) -> Void) {
     guard let url = URL(string: Endpoints.Gets.categories.url) else { return }
-    let task = URLSession.shared.dataTask(with: url) { maybeData, maybeResponse, maybeError in
+    
+    URLSession.shared.dataTask(with: url) { maybeData, maybeResponse, maybeError in
       if maybeError != nil {
         result(.failure(.addressUnreachable(url)))
       } else if
@@ -32,7 +33,6 @@ extension RemoteDataSource: RemoteDataSourceProtocol {
           result(.failure(.invalidResponse))
         }
       }
-    }
-    task.resume()
+    }.resume()
   }
 }

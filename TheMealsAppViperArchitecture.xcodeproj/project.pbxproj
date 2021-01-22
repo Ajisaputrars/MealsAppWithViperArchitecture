@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D74DBC8925BAAF7E00F5FCE6 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D74DBC8825BAAF7E00F5FCE6 /* RealmSwift */; };
+		D74DBC8B25BAAF7E00F5FCE6 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = D74DBC8A25BAAF7E00F5FCE6 /* Realm */; };
+		D74DBC9725BAB41600F5FCE6 /* CategoryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74DBC9625BAB41600F5FCE6 /* CategoryEntity.swift */; };
+		D74DBC9C25BAB42500F5FCE6 /* LocaleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74DBC9B25BAB42500F5FCE6 /* LocaleDataSource.swift */; };
 		D7673E1225B9FD8500CB2907 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = D7673E1125B9FD8500CB2907 /* SDWebImage */; };
 		D7673E1425B9FD8500CB2907 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D7673E1325B9FD8500CB2907 /* SDWebImageMapKit */; };
 		D7673E1925B9FE9800CB2907 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7673E1825B9FE9800CB2907 /* Extension.swift */; };
@@ -53,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D74DBC9625BAB41600F5FCE6 /* CategoryEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryEntity.swift; sourceTree = "<group>"; };
+		D74DBC9B25BAB42500F5FCE6 /* LocaleDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleDataSource.swift; sourceTree = "<group>"; };
 		D7673E1825B9FE9800CB2907 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		D7F0A07225B9C2900015F21A /* TheMealsAppViperArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheMealsAppViperArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7F0A07525B9C2900015F21A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,7 +96,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D74DBC8925BAAF7E00F5FCE6 /* RealmSwift in Frameworks */,
 				D7673E1425B9FD8500CB2907 /* SDWebImageMapKit in Frameworks */,
+				D74DBC8B25BAAF7E00F5FCE6 /* Realm in Frameworks */,
 				D7673E1225B9FD8500CB2907 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +120,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D74DBC8F25BAB3C600F5FCE6 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				D74DBC9125BAB3D800F5FCE6 /* Response */,
+				D7F0A0D025B9C7E80015F21A /* RemoteDataSource.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		D74DBC9025BAB3CF00F5FCE6 /* Locale */ = {
+			isa = PBXGroup;
+			children = (
+				D74DBC9225BAB3DF00F5FCE6 /* Entity */,
+				D74DBC9B25BAB42500F5FCE6 /* LocaleDataSource.swift */,
+			);
+			path = Locale;
+			sourceTree = "<group>";
+		};
+		D74DBC9125BAB3D800F5FCE6 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				D7F0A0D525B9C7FF0015F21A /* CategoryResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		D74DBC9225BAB3DF00F5FCE6 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				D74DBC9625BAB41600F5FCE6 /* CategoryEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		D7F0A06925B9C2900015F21A = {
 			isa = PBXGroup;
 			children = (
@@ -204,9 +246,9 @@
 		D7F0A0B825B9C4A60015F21A /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				D74DBC9025BAB3CF00F5FCE6 /* Locale */,
+				D74DBC8F25BAB3C600F5FCE6 /* Remote */,
 				D7F0A0CB25B9C7BC0015F21A /* MealRepository.swift */,
-				D7F0A0D025B9C7E80015F21A /* RemoteDataSource.swift */,
-				D7F0A0D525B9C7FF0015F21A /* CategoryResponse.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -335,6 +377,8 @@
 			packageProductDependencies = (
 				D7673E1125B9FD8500CB2907 /* SDWebImage */,
 				D7673E1325B9FD8500CB2907 /* SDWebImageMapKit */,
+				D74DBC8825BAAF7E00F5FCE6 /* RealmSwift */,
+				D74DBC8A25BAAF7E00F5FCE6 /* Realm */,
 			);
 			productName = TheMealsAppViperArchitecture;
 			productReference = D7F0A07225B9C2900015F21A /* TheMealsAppViperArchitecture.app */;
@@ -409,6 +453,7 @@
 			mainGroup = D7F0A06925B9C2900015F21A;
 			packageReferences = (
 				D7673E1025B9FD8500CB2907 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				D74DBC8725BAAF7E00F5FCE6 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 			);
 			productRefGroup = D7F0A07325B9C2900015F21A /* Products */;
 			projectDirPath = "";
@@ -466,8 +511,10 @@
 				D7F0A0F925B9CC680015F21A /* CustomError.swift in Sources */,
 				D7F0A08025B9C2900015F21A /* TheMealsAppViperArchitecture.xcdatamodeld in Sources */,
 				D7F0A0CC25B9C7BC0015F21A /* MealRepository.swift in Sources */,
+				D74DBC9C25BAB42500F5FCE6 /* LocaleDataSource.swift in Sources */,
 				D7F0A12525B9F13D0015F21A /* HomePresenter.swift in Sources */,
 				D7673E1925B9FE9800CB2907 /* Extension.swift in Sources */,
+				D74DBC9725BAB41600F5FCE6 /* CategoryEntity.swift in Sources */,
 				D7F0A0F425B9CC280015F21A /* CategoryMapper.swift in Sources */,
 				D7F0A0D625B9C7FF0015F21A /* CategoryResponse.swift in Sources */,
 				D7F0A0DD25B9C8890015F21A /* CategoryModel.swift in Sources */,
@@ -798,6 +845,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		D74DBC8725BAAF7E00F5FCE6 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.5.1;
+			};
+		};
 		D7673E1025B9FD8500CB2907 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
@@ -809,6 +864,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D74DBC8825BAAF7E00F5FCE6 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D74DBC8725BAAF7E00F5FCE6 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		D74DBC8A25BAAF7E00F5FCE6 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D74DBC8725BAAF7E00F5FCE6 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
 		D7673E1125B9FD8500CB2907 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D7673E1025B9FD8500CB2907 /* XCRemoteSwiftPackageReference "SDWebImage" */;
