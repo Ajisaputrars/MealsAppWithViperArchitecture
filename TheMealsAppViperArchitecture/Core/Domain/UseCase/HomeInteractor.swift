@@ -18,10 +18,8 @@ class HomeInteractor: HomeUseCase {
     self.repository = repository
   }
   
-  func getCategories(
-    completion: @escaping (Result<[CategoryModel], Error>) -> Void
-  ) {
-    repository.getCategories { result in
+  func getCategories(completion: @escaping (Result<[CategoryModel], Error>) -> Void) {
+    self.repository.getCategories { result in
       completion(result)
     }
   }

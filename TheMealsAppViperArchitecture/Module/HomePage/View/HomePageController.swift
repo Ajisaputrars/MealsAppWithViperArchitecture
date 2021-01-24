@@ -9,14 +9,14 @@ import UIKit
 
 class HomePageController: UIViewController {
   private lazy var homePageView = HomePageView(frame: self.view.frame)
-  private var homePresenter: HomePresenter?
+  var homePresenter: HomePresenter?
   
   override func viewDidLoad() {
     super.viewDidLoad()
     self.view = self.homePageView
     self.setupNavigationBar()
     
-    self.homePresenter = HomePresenter(homeUseCase: Injection.init().provideHome())
+    self.homePresenter = HomePresenter(homeUseCase: Injection.init().provideHomeUseCase())
     
     self.homePageView.mealTableView.delegate = self
     self.homePageView.mealTableView.dataSource = self

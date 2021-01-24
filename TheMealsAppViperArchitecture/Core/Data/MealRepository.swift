@@ -27,9 +27,7 @@ final class MealRepository {
 }
 
 extension MealRepository: MealRepositoryProtocol {
-  func getCategories(
-    result: @escaping (Result<[CategoryModel], Error>) -> Void
-  ) {
+  func getCategories(result: @escaping (Result<[CategoryModel], Error>) -> Void) {
     self.locale.getCategories { localeResponses in
       switch localeResponses {
       case .success(let categoryEntity):

@@ -11,18 +11,18 @@ import RealmSwift
 final class Injection {
   private func provideRepository() -> MealRepositoryProtocol {
     let realm = try? Realm()
-    let locale: LocaleDataSource = LocaleDataSource.sharedInstance(realm)
-    let remote: RemoteDataSource = RemoteDataSource.sharedInstance
+    let locale = LocaleDataSource.sharedInstance(realm)
+    let remote = RemoteDataSource.sharedInstance
     return MealRepository.shared(locale, remote)
   }
   
-  func provideHome() -> HomeUseCase {
-    let repository = provideRepository()
+  func provideHomeUseCase() -> HomeUseCase {
+    let repository = self.provideRepository()
     return HomeInteractor(repository: repository)
   }
 
-  func provideDetail(category: CategoryModel) -> DetailUseCase {
-    let repository = provideRepository()
+  func provideDetailUseCase(category: CategoryModel) -> DetailUseCase {
+    let repository = self.provideRepository()
     return DetailInteractor(repository: repository, category: category)
   }
 }

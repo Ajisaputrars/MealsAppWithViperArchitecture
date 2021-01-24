@@ -19,14 +19,12 @@ class HomePresenter {
   }
   
   func getCategories() {
-    homeUseCase.getCategories { result in
-      switch result {
-      case .success(let categories):
-        DispatchQueue.main.async {
+    self.homeUseCase.getCategories { result in
+      DispatchQueue.main.async {
+        switch result {
+        case .success(let categories):
           self.categories = categories
-        }
-      case .failure(let error):
-        DispatchQueue.main.async {
+        case .failure(let error):
           self.errorMessage = error.localizedDescription
         }
       }

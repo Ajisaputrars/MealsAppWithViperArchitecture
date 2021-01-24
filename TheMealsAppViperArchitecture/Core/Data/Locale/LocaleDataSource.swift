@@ -8,8 +8,7 @@
 import Foundation
 import RealmSwift
  
-protocol LocaleDataSourceProtocol: class {
- 
+protocol LocaleDataSourceProtocol {
   func getCategories(result: @escaping (Result<[CategoryEntity], DatabaseError>) -> Void)
   func addCategories(
     from categories: [CategoryEntity],
@@ -18,7 +17,7 @@ protocol LocaleDataSourceProtocol: class {
  
 }
  
-final class LocaleDataSource: NSObject {
+final class LocaleDataSource {
   private let realm: Realm?
   private init(realm: Realm?) {
     self.realm = realm
@@ -30,7 +29,6 @@ final class LocaleDataSource: NSObject {
 }
 
 extension LocaleDataSource: LocaleDataSourceProtocol {
- 
   func getCategories(
     result: @escaping (Result<[CategoryEntity], DatabaseError>) -> Void
   ) {
